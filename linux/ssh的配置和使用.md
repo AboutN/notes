@@ -1,5 +1,5 @@
 # SSH的配置和使用
-当使用ssh的密钥进行身份验证时,需要把公钥添加到远程服务器的authorized_keys文件中.
+当使用ssh的密钥进行身份验证时,需要把公钥添加到远程服务器的authorized_keys文件中. 生成密钥对需要使用openssh-keygen工具.
 
 ## 背景知识
 SSH(Secure Shell)是一种网络协议，用于远程登录和控制远程计算机。
