@@ -1,6 +1,21 @@
 # APT (Advanced Package Tool) 高级包管理工具
 apt 是新的面向用户更友好的包管理工具，而老的apt-get, apt-cache, apt-config等命令也并没有完全从系统中删除, 他们共享相同的底层库和基础设施。 在功能上可能会有些相互重叠。
 
+``` text
+用户界面层：
+├── apt (新一代命令行工具)
+├── apt-get (传统命令行工具) 
+├── apt-cache (缓存查询工具)
+└── aptitude (高级交互式工具)
+    ↓
+底层核心层：
+├── libapt-pkg (核心库)
+├── libapt-inst (安装库)
+└── dpkg (底层包管理器)
+```
+apt 和 apt-get 都依赖 libapt-pkg 这个核心库, 它们不互相依赖，而是共享相同的底层基础设施, 真正的底层包管理器是 dpkg
+
+
 ubuntu 中apt的配置信息主要在 `etc/apt/` 目录下. 
 
 
