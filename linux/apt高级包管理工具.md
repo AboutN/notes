@@ -92,6 +92,21 @@ echo \
 sudo apt-get update
 ```
 
-
-
+## apt常用命令
+1. apt update: 更新软件源列表
+2. apt upgrade: 升级已安装的软件包
+3. apt install: 安装软件包
+4. apt remove: 删除软件包
+5. apt purge: 删除软件包及其配置文件
+6. apt search <关键词>: 搜索软件包
+``` bash
+apt search --names-only <关键词> # 只在名称中搜索
+```
+7. apt show <软件包名>: 显示软件包信息
+8. apt list: 列出可用的软件包
+``` bash
+apt list --installed #  列出已安装的软件包
+```
+9. apt depend: 显示软件包的依赖关系
+10. apt autoremove: 删除不再需要的依赖包
 
