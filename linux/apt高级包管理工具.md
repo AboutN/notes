@@ -13,7 +13,9 @@ apt 是新的面向用户更友好的包管理工具，而老的apt-get, apt-cac
 ├── libapt-inst (安装库)
 └── dpkg (底层包管理器)
 ```
-apt 和 apt-get 都依赖 libapt-pkg 这个核心库, 它们不互相依赖，而是共享相同的底层基础设施, 真正的底层包管理器是 dpkg
+apt 和 apt-get 都依赖 libapt-pkg 这个核心库, 它们不互相依赖，而是共享相同的底层基础设施, 真正的底层包管理器是 dpkg. 
+
+dpkg 是 Debian 及其衍生系统（如 Ubuntu、Debian、Linux Mint 等）中用于管理 .deb 格式软件包的核心工具，主要用于直接操作本地软件包文件. 
 
 
 ubuntu 中apt的配置信息主要在 `etc/apt/` 目录下. 
